@@ -22,6 +22,7 @@ public class PlayerHand : MonoBehaviour
         }
 
         //NEW
+
         if (playerType == PlayerType.PLAYER && Input.GetKeyDown(KeyCode.F))
         {
             player.deck.DrawCard(1);
