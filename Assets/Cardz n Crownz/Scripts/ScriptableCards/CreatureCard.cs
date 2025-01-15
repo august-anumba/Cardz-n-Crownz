@@ -32,12 +32,10 @@ public partial class CreatureCard : ScriptableCard
 
     public virtual void Attack(Entity attacker, Entity target)
     {
-        //   int overDamage = 0;
         int chipAmount = 0;
-        // Reduce the target's health by damage dealt.
+
         if (attacker.strength > target.health)
         {
-            target.combat.CmdChangeHealth(-attacker.strength);
             chipAmount = attacker.strength - target.health;
             if (chipAmount < 0)
             {
@@ -45,17 +43,37 @@ public partial class CreatureCard : ScriptableCard
             }
             if (chipAmount > 0)
             {
+                Debug.Log(chipAmount);
                 Player.localPlayer.combat.CmdChangeHealthChip(-chipAmount);
             }
-        }
-
         target.combat.CmdChangeHealth(-attacker.strength);
-        attacker.combat.CmdChangeHealth(-target.strength);
         attacker.DestroyTargetingArrow();
         attacker.combat.CmdIncreaseWaitTurn();
+        }
+
+        if (attacker.strength == target.health)
+        {
+            
+            target.combat.CmdChangeHealth(-attacker.strength);
+            attacker.combat.CmdChangeHealth(-target.strength);
+            attacker.DestroyTargetingArrow();
+            attacker.combat.CmdIncreaseWaitTurn();
+        }
+
+        if (attacker.strength < target.health)
+        {
+
+            target.combat.CmdChangeHealth(-attacker.strength);
+            attacker.combat.CmdChangeHealth(-target.strength);
+            attacker.DestroyTargetingArrow();
+            attacker.combat.CmdIncreaseWaitTurn();
+        }
+
+        Debug.Log(chipAmount);
     }
 
-    private void OnValidate()
+
+    public void Update()
     {
         if (deathcrys.Count > 0) hasDeathCry = true;
 
@@ -65,5 +83,7 @@ public partial class CreatureCard : ScriptableCard
             acceptableTargets.Add(Target.ENEMIES);
             //acceptableTargets.Add(Target.OPPONENT);
         }
+
+
     }
 }

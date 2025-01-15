@@ -107,7 +107,8 @@ public class GameManager : NetworkBehaviour
         isOurTurn = true;
     }
 
-    //if Player
-
-    
+    public void EndGame()
+    {
+        Application.Quit();
+    }
 } 

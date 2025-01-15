@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: d611b6dc488d47144be2f5a5b723ee50
   image: {fileID: 21300000, guid: 2feb4117194fe924ea3fc4f523d7fc00, type: 3}
-  cost: 2
+  cost: 1
   category: 
   intiatives: []
   hasInitiative: 0
   description: An ice cold, flightless king.
-  strength: 3
-  health: 5
+  strength: 5
+  health: 10
   acceptableTargets: 03
   creatureType: 
   hasCharge: 0

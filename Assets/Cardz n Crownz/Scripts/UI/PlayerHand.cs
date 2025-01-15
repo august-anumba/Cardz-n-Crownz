@@ -21,6 +21,12 @@ public class PlayerHand : MonoBehaviour
             player.deck.DrawCard(7);
         }
 
+        //NEW
+        if (playerType == PlayerType.PLAYER && Input.GetKeyDown(KeyCode.F))
+        {
+            player.deck.DrawCard(1);
+        }
+
         if (IsEnemyHand())
         {
             // instantiate/destroy enough slots
