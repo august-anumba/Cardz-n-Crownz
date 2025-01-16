@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using Mirror;
+using UnityEngine.SceneManagement;
 
 // Useful for UI. Whether the player is, well, a player or an enemy.
 public enum PlayerType { PLAYER, ENEMY };
@@ -118,6 +119,10 @@ public class Player : Entity
             gameManager.StartGame();
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape) && isLocalPlayer)
+        {
+            SceneManager.LoadScene(0);
+        }
 
     }
 

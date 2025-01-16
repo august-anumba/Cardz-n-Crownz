@@ -68,8 +68,6 @@ public partial class CreatureCard : ScriptableCard
             attacker.DestroyTargetingArrow();
             attacker.combat.CmdIncreaseWaitTurn();
         }
-
-        Debug.Log(chipAmount);
     }
 
 
