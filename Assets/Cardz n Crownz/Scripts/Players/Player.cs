@@ -118,6 +118,7 @@ public class Player : Entity
         {
             gameManager.StartGame();
         }
+
     }
 
     public void UpdateEnemyInfo()
@@ -146,4 +147,6 @@ public class Player : Entity
     }
 
     public bool IsOurTurn() => gameManager.isOurTurn;
+
+
 }
