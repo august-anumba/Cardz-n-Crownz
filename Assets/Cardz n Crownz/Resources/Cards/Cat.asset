@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 992a434fee04c2f47bebd224e2fb0dee, type: 3}
-  m_Name: test
+  m_Name: Cat
   m_EditorClassIdentifier: 
-  id: test
-  image: {fileID: 21300000, guid: 80d42fb1a81503e40893a05fec16264d, type: 3}
-  cost: 1
+  id: bb5d76108a9d6944a968d682d55cb63f
+  image: {fileID: 21300000, guid: 092929b7967a996478bb57510ba36b1e, type: 3}
+  cost: 6
   category: 
   intiatives: []
   hasInitiative: 0
-  description: Description change
-  strength: 1
-  health: 1
+  description: Meow! meow! Meowmix!!
+  strength: 10
+  health: 5
   acceptableTargets: 03
   creatureType: 
   hasCharge: 0
