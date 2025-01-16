@@ -118,12 +118,6 @@ public class Player : Entity
         {
             gameManager.StartGame();
         }
-
-        if (Input.GetKeyDown(KeyCode.Escape) && isLocalPlayer)
-        {
-            SceneManager.LoadScene(0);
-        }
-
     }
 
     public void UpdateEnemyInfo()
