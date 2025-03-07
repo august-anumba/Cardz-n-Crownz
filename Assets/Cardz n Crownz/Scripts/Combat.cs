@@ -30,7 +30,10 @@ public class Combat : NetworkBehaviour
         // Increase health by amount. If 3, increase by 3. If -3, reduce by 3.
         entity.health += amount;
         if (entity.health <= 0) Destroy(entity.gameObject);
-        if (Player.localPlayer.health <= 0) Application.Quit();
+          
+        {
+
+        }
     }
 
     //Chip
