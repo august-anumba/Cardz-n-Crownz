@@ -33,14 +33,14 @@ public class Combat : NetworkBehaviour
     }
 
     //Chip
-    [Command(ignoreAuthority = true)]
-    public void CmdChangeHealthChip(int chipAmount)
-    {
+    //[Command(ignoreAuthority = true)]
+    //public void CmdChangeHealthChip(int chipAmount)
+    //{
         // Decrease player health by amount. If 3, increase by 3. If -3, reduce by 3.
-        entity = Player.localPlayer;
-        entity.health += chipAmount;
-        if (entity.health <= 0) Application.Quit();
-    }
+        //entity = Player.localPlayer;
+       // entity.health += chipAmount;
+     //   if (entity.health <= 0) Application.Quit();
+    //}
 
     [Command(ignoreAuthority = true)]
     public void CmdIncreaseWaitTurn()

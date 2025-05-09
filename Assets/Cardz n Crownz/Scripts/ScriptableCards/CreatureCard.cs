@@ -32,42 +32,45 @@ public partial class CreatureCard : ScriptableCard
 
     public virtual void Attack(Entity attacker, Entity target)
     {
-        int chipAmount = 0;
-
-        if (attacker.strength > target.health)
-        {
-            chipAmount = attacker.strength - target.health;
-            if (chipAmount < 0)
-            {
-                chipAmount = 0;
-            }
-            if (chipAmount > 0)
-            {
-                Debug.Log(chipAmount);
-                Player.localPlayer.combat.CmdChangeHealthChip(-chipAmount);
-            }
         target.combat.CmdChangeHealth(-attacker.strength);
         attacker.DestroyTargetingArrow();
         attacker.combat.CmdIncreaseWaitTurn();
-        }
+        //int chipAmount = 0;
 
-        if (attacker.strength == target.health)
-        {
-            
-            target.combat.CmdChangeHealth(-attacker.strength);
-            attacker.combat.CmdChangeHealth(-target.strength);
-            attacker.DestroyTargetingArrow();
-            attacker.combat.CmdIncreaseWaitTurn();
-        }
+        //if (attacker.strength > target.health)
+        //{
+        //  chipAmount = attacker.strength - target.health;
+        //if (chipAmount < 0)
+        //{
+        //   chipAmount = 0;
+        //}
+        //if (chipAmount > 0)
+        //{
+        //  Debug.Log(chipAmount);
+        //Player.localPlayer.combat.CmdChangeHealthChip(-chipAmount);
+        //           }
+        //     target.combat.CmdChangeHealth(-attacker.strength);
+        //   attacker.DestroyTargetingArrow();
+        // attacker.combat.CmdIncreaseWaitTurn();
+        //        }
+        //
+        //        if (attacker.strength == target.health)
+        //        {
+        //            
+        //           target.combat.CmdChangeHealth(-attacker.strength);
+        //         attacker.combat.CmdChangeHealth(-target.strength);
+        //       attacker.DestroyTargetingArrow();
+        //     attacker.combat.CmdIncreaseWaitTurn();
+        //      }
 
-        if (attacker.strength < target.health)
-        {
-
-            target.combat.CmdChangeHealth(-attacker.strength);
-            attacker.combat.CmdChangeHealth(-target.strength);
-            attacker.DestroyTargetingArrow();
-            attacker.combat.CmdIncreaseWaitTurn();
-        }
+        //    if (attacker.strength < target.health)
+        //  {
+        //
+        //    target.combat.CmdChangeHealth(-attacker.strength);
+        //  attacker.combat.CmdChangeHealth(-target.strength);
+        // attacker.DestroyTargetingArrow();
+        // attacker.combat.CmdIncreaseWaitTurn();
+        //    }
     }
 
 
@@ -79,7 +82,7 @@ public partial class CreatureCard : ScriptableCard
         if (acceptableTargets.Count == 0)
         {
             acceptableTargets.Add(Target.ENEMIES);
-            //acceptableTargets.Add(Target.OPPONENT);
+            acceptableTargets.Add(Target.OPPONENT);
         }
 
 
