@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 992a434fee04c2f47bebd224e2fb0dee, type: 3}
-  m_Name: Bird
+  m_Name: Graveborn
   m_EditorClassIdentifier: 
-  id: test
-  image: {fileID: 21300000, guid: 80d42fb1a81503e40893a05fec16264d, type: 3}
-  cost: 1
+  id: d611b6dc488d47144be2f5a5b723ee50
+  image: {fileID: 0}
+  cost: 4
   category: 
   intiatives: []
   hasInitiative: 0
-  description: Description change
-  strength: 1
-  health: 2
+  description: "Crawled from a forgotten crypt, it feeds on fear\u2014and finishes
+    what death could not."
+  strength: 5
+  health: 10
   acceptableTargets: 0301
   creatureType: 
   hasCharge: 0

@@ -10,17 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 992a434fee04c2f47bebd224e2fb0dee, type: 3}
-  m_Name: King
+  m_Name: Dreadbill
   m_EditorClassIdentifier: 
-  id: d611b6dc488d47144be2f5a5b723ee50
-  image: {fileID: 21300000, guid: 2feb4117194fe924ea3fc4f523d7fc00, type: 3}
-  cost: 4
+  id: ce27ae6b0656c4d48a646cbb43458cda
+  image: {fileID: 0}
+  cost: 2
   category: 
   intiatives: []
   hasInitiative: 0
-  description: An ice cold, flightless king.
-  strength: 5
-  health: 10
+  description: "Don\u2019t laugh\u2014its crimson beak breaks bone, and its battle
+    cry chills seasoned warriors."
+  strength: 3
+  health: 2
   acceptableTargets: 0301
   creatureType: 
   hasCharge: 0

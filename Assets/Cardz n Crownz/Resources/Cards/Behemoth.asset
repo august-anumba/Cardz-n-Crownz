@@ -10,16 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 992a434fee04c2f47bebd224e2fb0dee, type: 3}
-  m_Name: Cat
+  m_Name: Behemoth
   m_EditorClassIdentifier: 
-  id: bb5d76108a9d6944a968d682d55cb63f
-  image: {fileID: 21300000, guid: 092929b7967a996478bb57510ba36b1e, type: 3}
-  cost: 6
+  id: ed3d5391410892a448e16d4d72270cea
+  image: {fileID: 0}
+  cost: 7
   category: 
   intiatives: []
   hasInitiative: 0
-  description: Meow! meow! Meowmix!!
-  strength: 10
+  description: A towering brute from swampy depths, its charge quakes earth and scatters
+    the unprepared.
+  strength: 16
   health: 5
   acceptableTargets: 0301
   creatureType: 
