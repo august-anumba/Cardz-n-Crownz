@@ -3,6 +3,15 @@ using UnityEngine;
 
 public class FieldCardHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
+    AudioManager audioManager;
+
+
+    private void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
+    }
+
+
     public FieldCard card;
     public float hoverDelay = 0.4f;
     private bool isHovering = false;
@@ -43,6 +52,7 @@ public class FieldCardHover : MonoBehaviour, IPointerEnterHandler, IPointerExitH
         {
             // Turn on hover if player isn't targeting
             if (!Player.localPlayer.isTargeting) card.cardHover.gameObject.SetActive(true);
+            audioManager.PlaySFX(audioManager.select);
 
             // Turn on Shine/Glow border so our opponents can see us hovering over cards during our turn.
             if (Player.gameManager.isOurTurn)

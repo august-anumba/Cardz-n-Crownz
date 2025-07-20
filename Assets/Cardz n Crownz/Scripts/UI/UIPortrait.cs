@@ -45,11 +45,15 @@ public partial class UIPortrait : MonoBehaviour
             health.text = enemyInfo.health.ToString();
             mana.text = enemyInfo.mana.ToString();
             enemyInfo.data.spawnOffset = portrait.transform;
+
+  
         }
         else
         {
+            //Debug.LogError("in ui portraits");
+            //Application.Quit();
             panel.SetActive(false);
-        //    Application.Quit();
+           
         }
     }
 }

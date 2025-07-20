@@ -21,7 +21,7 @@ MonoBehaviour:
   description: Looks a lot like yo mama
   strength: 16
   health: 5
-  acceptableTargets: 03
+  acceptableTargets: 0301
   creatureType: 
   hasCharge: 0
   hasTaunt: 0

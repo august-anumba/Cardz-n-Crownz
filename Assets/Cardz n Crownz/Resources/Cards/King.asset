@@ -21,7 +21,7 @@ MonoBehaviour:
   description: An ice cold, flightless king.
   strength: 5
   health: 10
-  acceptableTargets: 03
+  acceptableTargets: 0301
   creatureType: 
   hasCharge: 0
   hasTaunt: 0

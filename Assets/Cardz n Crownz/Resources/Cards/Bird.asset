@@ -21,7 +21,7 @@ MonoBehaviour:
   description: Description change
   strength: 1
   health: 2
-  acceptableTargets: 03
+  acceptableTargets: 0301
   creatureType: 
   hasCharge: 0
   hasTaunt: 0
